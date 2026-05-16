@@ -25,5 +25,6 @@ jobs:
     - name: تشغيل البوت
       env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}      # ← من GitHub Secrets
       run: |
         python bot.py
